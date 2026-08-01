@@ -5,7 +5,7 @@
     st = status -s
 
     br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) -%(color:red)%(objectname:short)%(color:reset) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-
+    lg = log --oneline --graph --decorate
     loghm = log --oneline --graph --decorate master..HEAD
 
 [guitool "checkout"]
