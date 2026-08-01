@@ -1,0 +1,57 @@
+confirmOnQuit: true
+disableStartupPopups: true
+
+gui:
+
+  mainPanelSplitMode: horizontal
+  showBottomLine: false
+
+  # Show branch log info in status pane, instead of lazygit logo.
+  statusPanelView: allBranchesLog
+
+  # Show files flat, not as tree; toggable via ``` (tick).
+  showFileTree: false
+
+  # Command log - hide by default, and make it shorter when shown.
+  showCommandLog: false
+  commandLogSize: 4
+
+  # Start in half-zoom mode and not this "show all" full view. Toggle live
+  # via `-` and `+`.
+  screenMode: half
+
+  theme:
+    activeBorderColor:
+      - '#89b4fa'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    optionsTextColor:
+      - '#89b4fa'
+    selectedLineBgColor:
+      - '#313244'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    cherryPickedCommitFgColor:
+      - '#89b4fa'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+
+  authorColors:
+    '*': '#b4befe'
+
+
+git:
+  autoFetch: false
+
+  # Show files flat, not as tree; toggable via ``` (tick)
+  showFileTree: false
+
+  disableForcePushing: true
+
+  log:
+    showWholeGraph: true
