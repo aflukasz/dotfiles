@@ -1,0 +1,2 @@
+# fzf integration - https://junegunn.github.io/fzf/shell-integration/
+source <(fzf --zsh)
