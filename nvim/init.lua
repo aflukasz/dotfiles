@@ -1,0 +1,15 @@
+require("config.basics")
+require("config.diagnostics")
+require("config.folding")
+require("config.helix_compat")
+require("config.theme")
+
+require("config.plugins.git_signs")
+require("config.plugins.neominimap")
+require("config.plugins.snacks")
+require("config.plugins.flash")
+require("config.plugins.treesitter")
+require("config.plugins.lazygit")
+require("config.plugins.lsp_config")
+
+require("config.lsp")
