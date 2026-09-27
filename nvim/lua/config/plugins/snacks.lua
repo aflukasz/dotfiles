@@ -20,20 +20,6 @@ require("snacks").setup({
 })
 
 
-vim.keymap.set("n", "<leader>e", function()
-  local picker = Snacks.picker.get({ source = "explorer" })[1]
-
-  if picker then
-    if picker:is_focused() then
-      vim.api.nvim_set_current_win(picker.main)
-    else
-      picker:focus("list", { show = true })
-    end
-  else
-    Snacks.explorer()
-  end
-end, { desc = "Open or focus Explorer" })
-
 local keys = {
     -- Top Pickers & Explorer
     { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
@@ -110,5 +96,19 @@ local keys = {
 
 
 Snacks.toggle.indent():map("<leader>ui")
+
+vim.keymap.set("n", "<leader>e", function()
+  local picker = Snacks.picker.get({ source = "explorer" })[1]
+
+  if picker then
+    if picker:is_focused() then
+      vim.api.nvim_set_current_win(picker.main)
+    else
+      picker:focus("list", { show = true })
+    end
+  else
+    Snacks.explorer()
+  end
+end, { desc = "Open or focus Explorer" })
 
 
