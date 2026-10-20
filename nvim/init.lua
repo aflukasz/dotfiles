@@ -11,5 +11,7 @@ require("config.plugins.flash")
 require("config.plugins.treesitter")
 require("config.plugins.lazygit")
 require("config.plugins.lsp_config")
+require("config.plugins.surround")
+require("config.plugins.blink_cmp")
 
 require("config.lsp")
