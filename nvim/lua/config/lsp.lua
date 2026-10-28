@@ -7,6 +7,8 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("markdown_oxide")
 
 vim.lsp.enable("bashls")
+vim.lsp.enable("lemminx")
+vim.lsp.enable('rust_analyzer')
 
 -- vim.keymap.set('n', 'k', vim.lsp.buf.hover, { desc = 'LSP Hover Documentation' })
 -- vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, { desc = 'LSP [R]e[n]ame' })

@@ -39,6 +39,13 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",
 	callback = function()
 		vim.cmd([[%s/\s\+$//e]])
+		local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+		local last_line = #lines
+		while last_line > 1 and lines[last_line] == "" do
+			last_line = last_line - 1
+		end
+		if last_line < #lines then
+			vim.api.nvim_buf_set_lines(0, last_line, -1, false, {})
+		end
 	end,
 })
-
