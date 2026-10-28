@@ -15,6 +15,13 @@ require("snacks").setup({
                     backdrop = false
                 }
             }
+        },
+        sources = {
+            lsp_references = {
+                -- Observed this filtering out also other things than "current",
+                -- so let's disable hiding of "current".
+                include_current = true
+            }
         }
     }
 })
